@@ -1,0 +1,16 @@
+'''
+Write a function to calculate number e 
+(base of natural logarithms 2.718281828459045...) 
+using formula 
+'''
+
+import math
+
+def ne(i):
+    k = 0
+    while k <= i:
+        e1 = (1) / math.factorial(k)
+        k = k + 1
+    return e1
+
+print(ne(10))
