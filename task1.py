@@ -10,4 +10,4 @@ while i < n - 2:
     fib2 = fib_sum
     i = i + 1
 
-print(' the', n, 'number Fibonacci is', fib2)
+print('The', n, 'number Fibonacci is', fib2)
