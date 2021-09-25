@@ -6,7 +6,7 @@ Create a function which reverts a dictionary
 def inverse_dict(my_dict):
     result_dict = {}
     for key, value in my_dict.items():
-        if not value in result_dict.keys():
+        if value not in result_dict.keys():
             result_dict[value] = []
         result_dict[value].append(key)
     return result_dict
