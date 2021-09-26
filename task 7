@@ -1,0 +1,17 @@
+'''
+Write a function which asks the user to enter a text and returns 3 numbers 
+like unix wc utility:
+- number of characters,
+- number of words,
+- number of lines.
+'''
+
+
+def count_(l):
+    char = len(l)
+    word = len(l.split())
+    line = len(l.splitlines())
+    return char, word, line 
+
+l = 'Hello Python'
+print(count_(l))

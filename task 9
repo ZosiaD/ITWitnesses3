@@ -1,0 +1,23 @@
+'''
+Write a procedure which finds the Greatest Common Divisor of 2 numbers, 
+which is defined as the largest number which will evenly divide two other 
+numbers.  Examples: GCD( 5, 10 ) = 5, GCD( 21, 28 ) = 7.
+'''
+
+def GCD(a, b):
+    if (a == 0):
+        return b
+    if (b == 0):
+        return a
+    if (a == b):
+        return a
+    if (a > b):
+        return GCD(a - b, b)
+    return GCD(a, b - a)
+
+a = 28
+b = 21
+if(GCD(a, b)):
+    print('GCD(', a, ',', b, ') = ', GCD(a, b))
+else:
+    print('not found')
