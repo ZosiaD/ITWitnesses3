@@ -9,7 +9,7 @@ import math
 def ne(i):
     k = 0
     while k <= i:
-        e1 = (1) / math.factorial(k)
+        e1 = 1 / math.factorial(k)
         k = k + 1
     return e1
 
