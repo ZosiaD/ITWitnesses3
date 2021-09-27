@@ -5,13 +5,13 @@ numbers.  Examples: GCD( 5, 10 ) = 5, GCD( 21, 28 ) = 7.
 '''
 
 def GCD(a, b):
-    if (a == 0):
+    if a == 0:
         return b
-    if (b == 0):
+    if b == 0:
         return a
-    if (a == b):
+    if a == b:
         return a
-    if (a > b):
+    if a > b:
         return GCD(a - b, b)
     return GCD(a, b - a)
 
@@ -21,3 +21,4 @@ if(GCD(a, b)):
     print('GCD(', a, ',', b, ') = ', GCD(a, b))
 else:
     print('not found')
+
